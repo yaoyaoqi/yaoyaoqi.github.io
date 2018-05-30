@@ -89,20 +89,18 @@
 <h3 id="安装Git-Bash"><a href="#安装Git-Bash" class="headerlink" title="安装Git Bash"></a>安装Git Bash</h3><p>我的系统是Windows 64位，官网下载速度特别慢，所以推荐地址为<a href="https://github.com/waylau/git-for-win" target="_blank" rel="noopener">Git Bash</a>。双击下载好的exe文件，一路next就好啦~</p>
 <h3 id="安装NodeJs"><a href="#安装NodeJs" class="headerlink" title="安装NodeJs"></a>安装NodeJs</h3><p><a href="http://nodejs.org/" target="_blank" rel="noopener">NodeJs</a>,双击打开安装，也是一路next，不过在Custom Setup这一步记得选 Add to PATH ,这样就不用自己去配置电脑上环境变量了。</p>
 <h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>创建一个用来存放所有blog的文件夹，双击打开文件夹后，在空白处右键，点击Git Bash here。<br>安装Hexo命令：$ npm install -g hexo-cli<br>初始化命令：$ hexo init ,所在的文件夹会出现一些文件，node_module，public，scaffolds，source，themes，config.yml，db.json，package.json</p>
-<p>##与Github关联配置</p>
-<p>在github里创建一个repo，名称为yourname.github.io, 其中yourname是你的github名称，按照这个规则创建才有用。<br>在gitbash里输入：$ git config –global user.name “YourName”<br>                $ git config –global user.email “YourEmail”<br>                $ ssh-keygen -t rsa -C “<a href="mailto:YourEmail@example.com" target="_blank" rel="noopener">YourEmail@example.com</a>“<br>                后续操作直接回车即可<br>把获取的ssh key 加到 github的settings中的SSH Keys<br>在gitbash里输入：$ ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a> 验证是否成功</p>
+<h2 id="与Github关联配置"><a href="#与Github关联配置" class="headerlink" title="与Github关联配置"></a>与Github关联配置</h2><p>在github里创建一个repo，名称为yourname.github.io, 其中yourname是你的github名称，按照这个规则创建才有用。<br>在gitbash里输入：$ git config –global user.name “YourName”<br>                $ git config –global user.email “YourEmail”<br>                $ ssh-keygen -t rsa -C “<a href="mailto:YourEmail@example.com" target="_blank" rel="noopener">YourEmail@example.com</a>“<br>                后续操作直接回车即可<br>把获取的ssh key 加到 github的settings中的SSH Keys<br>在gitbash里输入：$ ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a> 验证是否成功</p>
 <p>用编辑器（我用的是VSCode)修改_config.yml文件<br>deploy:<br>  type: git<br>  repo: <a href="https://github.com/YourgithubName/YourgithubName.github.io.git" target="_blank" rel="noopener">https://github.com/YourgithubName/YourgithubName.github.io.git</a><br>  branch: master</p>
 <p>安装自动保存上传到github插件<br>在gitbash里输入：$ npm install hexo-deployer-git –save</p>
 <p>在gitbash中输入 hexo clean<br>               hexo generate<br>               hexo server</p>
 <p>然后打开浏览器（我用的是Google chrome）输入：<a href="http://localhpst:400" target="_blank" rel="noopener">http://localhpst:400</a></p>
-<p>##新建文章</p>
-<p>在gitbash里输入： hexo new ‘文章名’<br>新建的文章在source/_posts路径下</p>
+<h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><p>在gitbash里输入： hexo new ‘文章名’<br>新建的文章在source/_posts路径下</p>
 <p>以上大部分内容参考的文章是<a href="https://www.cnblogs.com/visugar/p/6821777.html" target="_blank" rel="noopener">https://www.cnblogs.com/visugar/p/6821777.html</a><br>撒花感谢！</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/27/如何开始Hexo/" data-id="cjhsz0lop00011wvkz64f7ico" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/27/如何开始Hexo/" data-id="cjhszff0b0000r0vkpzjjtdlo" class="article-share-link">Share</a>
       
       
     </footer>
@@ -147,7 +145,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/21/hello-world/" data-id="cjhsz0lop00001wvk3ec6ji6m" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/21/hello-world/" data-id="cjhszff0r0001r0vk01edaoee" class="article-share-link">Share</a>
       
       
     </footer>
